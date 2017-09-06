@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.mob_menu_bg {
+  opacity: 1;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 996;
+}
+.mob_menu_bg.show {
+  opacity: 1;
+  visibility: visible;
+}
+header {
+  background-color: #fff;
+  min-height: 110px;
+}
+.logo {
+  margin-top: 10px;
+  display: inline-block;
+}
+.wrapper-search {
+  width: 568px;
+  margin-left: 51px;
+  display: inline-block;
+  height: 40px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+.wrapper-search .icon-search {
+  position: relative;
+  font-size: 20px;
+  color: #aaaaaa;
+  font-weight: 100;
+  width: 41px;
+  float: left;
+  border: 1px solid #ccc;
+  border-right: none;
+  display: block;
+  height: 40px;
+}
+.wrapper-search .icon-search .icon-search__image {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  margin: 9px auto;
+}
+.wrapper-search .icon-search:after {
+  content: '';
+  display: block;
+  width: 1px;
+  right: 0;
+  top: 8px;
+  background-color: #ccc;
+  height: 22px;
+  position: absolute;
+}
+.wrapper-search input {
+  width: 427px;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  font-size: 13px;
+}
+.wrapper-search .btn-search {
+  float: right;
+  padding-right: 2px;
+  width: 100px;
+  text-align: center;
+  background-color: #d71921;
+  display: block;
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px ;
+  transition: .2s;
+}
+.wrapper-search .btn-search:hover {
+  background-color: #b71c1c;
+}
+.wrapper-telephone {
+  display: inline-block;
+  margin-top: 18px;
+  padding-left: 48px;
+  vertical-align: top;
+}
+.vodafone,
+.kyevstar,
+.lifecell {
+  padding-bottom: 7.6px;
+}
+[class^="number-tel__"] {
+  color: #2f2f2f;
+  position: relative;
+  display: block;
+  font-size: 16px;
+  padding-left: 29px;
+}
+[class^="number-tel__"]::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+}
+.number-tel__vodafone::before {
+  background: url(../images/vodafone.png) no-repeat;
+}
+.number-tel__kyevstar::before {
+  background: url(../images/kyevstar.png) no-repeat;
+}
+.number-tel__lifecell::before {
+  background: url(../images/lifecell.png) no-repeat;
+}
+.wrapper-language__site {
+  display: inline-block;
+  margin-top: 43px;
+  padding-left: 26px;
+  vertical-align: top;
+}
+.wrapper-language__site .language__site-link {
+  color: #5e6366;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.language__site-link.active {
+  color: #d71921;
+}
+.language__site-link:first-child {
+  padding-right: 5px;
+}
+.open-menu {
+  position: absolute;
+  right: 20px;
+  top: 37px;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+  color: #5e6366;
+}
+@media screen and (max-width: 1169px) {
+  header {
+    padding: 0 8px;
+  }
+  .wrapper-search {
+    margin-left: 32px;
+  }
+}
+@media screen and (max-width: 1149px) {
+  header {
+    padding: 0 8px;
+  }
+  .wrapper-search {
+    margin-left: 30px;
+  }
+  .wrapper-telephone {
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 1164px) {
+  .wrapper-search {
+    width: 46%;
+  }
+  .wrapper-search .icon-search {
+    width: 10%;
+  }
+  .wrapper-search input {
+    width: 68%;
+  }
+  .wrapper-search .btn-search {
+    padding-left: 0px;
+    width: 22%;
+  }
+}
+@media screen and (max-width: 1039px) {
+  .wrapper-search {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .logo {
+    width: 215px;
+  }
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .wrapper-search {
+    width: 40%;
+  }
+  .wrapper-search .icon-search {
+    width: 12%;
+  }
+  .wrapper-search input {
+    width: 67%;
+  }
+  .wrapper-search .btn-search {
+    padding-left: 0px;
+    width: 21%;
+  }
+}
+@media screen and (max-width: 995px) {
+  .wrapper-language__site {
+    display: none;
+  }
+}
+@media screen and (max-width: 925px) {
+  .wrapper-search {
+    width: 38%;
+  }
+  .wrapper-search .icon-search {
+    width: 15%;
+  }
+  .wrapper-search input {
+    width: 60%;
+  }
+  .wrapper-search .btn-search {
+    padding-left: 0px;
+    width: 25%;
+  }
+  .wrapper-telephone {
+    margin-top: 21px;
+  }
+  [class^="number-tel__"] {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 835px) {
+  .logo {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .wrapper-telephone {
+    display: none;
+  }
+  .wrapper-search {
+    width: 50%;
+  }
+  .logo {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .logo {
+    width: 181px;
+    margin-top: 14px;
+  }
+  .wrapper-search {
+    display: block;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .wrapper-search .icon-search {
+    width: 10%;
+  }
+  .wrapper-search input {
+    width: 64%;
+  }
+  .wrapper-search .btn-search {
+    padding-left: 0px;
+    width: 26%;
+  }
+}
