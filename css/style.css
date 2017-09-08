@@ -1,4 +1,3 @@
-@import "carousel.css";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -106,7 +105,7 @@ header {
   position: relative;
   display: block;
   font-size: 16px;
-  padding-left: 29px;
+  padding-left: 28px;
 }
 [class^="number-tel__"]::before {
   content: '';
@@ -581,15 +580,20 @@ header {
 }
 .wrapper__links-menu {
   background-color: #d71921;
-  right: 60px;
   height: 60px;
   float: right;
+}
+.links-menu:first-child {
+  padding-left: 7px;
+}
+.links-menu:nth-child(2) {
+  padding-left: 10px;
 }
 .links-menu {
   display: inline-block;
   width: 77px;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 8.5px;
 }
 .img_comparison,
 .img_favorites,
@@ -615,7 +619,7 @@ header {
   font-family: 'Roboto', sans-serif;
 }
 .wrapper__login {
-  width: 57px;
+  width: 59px;
   height: 60px;
   float: right;
   text-align: center;
@@ -767,7 +771,7 @@ a {
 }
 .sidebarL {
   width: 270px;
-  top: 512px;
+  top: 482px;
   position: relative;
   float: left;
 }
@@ -812,6 +816,10 @@ a {
   color: #fff ;
   text-transform: uppercase;
   font-weight: 100;
+  transition: all .5s ease;
+}
+.sidebarL .banner-conditioner__btn a:hover {
+  background-color: #b71c1c;
 }
 .content {
   margin-left: 300px;
@@ -832,6 +840,249 @@ a {
 @media screen and (max-width: 850px) {
   .content {
     margin-left: 0px;
+  }
+}
+#wrapper-carousel {
+  font-size: 0;
+  margin-top: 30px;
+  margin-bottom: 46px;
+}
+#wrapper-carousel img {
+  max-width: 100%;
+  text-align: right;
+}
+#wrapper-carousel .carousel-banner2 {
+  margin: 0 30px 0 30px;
+}
+#wrapper-carousel .carousel-banner1,
+#wrapper-carousel .carousel-banner2,
+#wrapper-carousel .carousel-banner3 {
+  display: inline-block;
+  width: 270px;
+}
+#wrapper-carousel .slick-dots {
+  bottom: -18px;
+  left: 1px;
+}
+#wrapper-carousel .slick-dots li {
+  height: 8px;
+  width: 8px;
+}
+#wrapper-carousel .slick-dots li button {
+  height: 8px;
+  width: 8px;
+}
+#wrapper-carousel .slick-dots li.slick-active button:before {
+  opacity: 1;
+  background-color: #485258;
+}
+#wrapper-carousel .slick-dots li button:before {
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  content: '';
+  text-align: center;
+  opacity: 1;
+  background-color: #dadada;
+}
+@media screen and (max-width: 1190px) {
+  #wrapper-carousel .carousel-banner2 {
+    margin: 0 0 0 0;
+  }
+  #wrapper-carousel .carousel-banner1,
+  #wrapper-carousel .carousel-banner2,
+  #wrapper-carousel .carousel-banner3 {
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 850px) {
+  .carousel-banner1,
+  .carousel-banner2,
+  .carousel-banner3 {
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+  }
+}
+.slider__top_heading {
+  font-size: 16px;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 31px;
+  background-color: #f3f3f3;
+  font-family: 'Roboto', sans-serif;
+  color: #2f2f2f;
+}
+.goods-slider__top {
+  border: 1px solid  #f3f3f3;
+  margin-bottom: 20px;
+}
+.goods-slider__top .portfolio-arrow {
+  position: absolute;
+  width: 20px;
+  cursor: pointer;
+  top: -29px;
+}
+.goods-slider__top .portfolio-arrow--prev {
+  right: 54px;
+  border: 5px solid transparent;
+  border-right: 5px solid #a4a3a3;
+}
+.goods-slider__top .portfolio-arrow--next {
+  right: 24px;
+  border: 5px solid transparent;
+  border-left: 5px solid #a4a3a3;
+}
+.goods-slider__top .goods-slider {
+  border-right: 1px solid #f3f3f3;
+}
+.goods {
+  height: 447px;
+}
+.goods-img {
+  padding: 30px 0 0 0;
+}
+.goods-img img {
+  margin: auto;
+  max-width: 100%;
+}
+.goods-description {
+  padding-top: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 31px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.goods-description .price_wrapper {
+  text-align: left;
+}
+.goods-description .price_wrapper span {
+  font-size: 21.96px;
+  color: #d71921;
+  font-family: 'Rubik', sans-serif;
+}
+.goods-description .name {
+  text-align: left;
+  padding: 13px 0;
+}
+.goods-description .name a {
+  font-size: 15.97px;
+  color: #2f2f2f;
+  transition: all .4s ease;
+}
+.goods-description .name a:hover {
+  color: #d71921;
+}
+.goods-description .name a span {
+  display: inline-block;
+}
+.goods-description .brand_wrapper span {
+  font-size: 13.97px;
+  display: inline-block;
+}
+.goods-description .brand_wrapper :first-child {
+  color: #888888;
+  padding-right: 3px;
+}
+.goods-description .brand_wrapper :nth-child(2) {
+  color: #d71921;
+}
+.goods-description .video-rev {
+  padding-top: 4px;
+}
+.goods-description .video-rev .rev {
+  display: inline-block;
+  padding-right: 13px;
+}
+.goods-description .video-rev .rev div {
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+  font-size: 11.98px;
+}
+.goods-description .video-rev .rev div i {
+  color: #d71921;
+  padding-right: 5px;
+}
+.goods-description .video-rev .video {
+  display: inline-block;
+}
+.goods-description .video-rev .video div {
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+  font-size: 11.98px;
+}
+.goods-description .video-rev .video div i {
+  padding-right: 5px;
+  color: #ffd200;
+}
+.hover__goods-slider {
+  display: none;
+  margin-bottom: 10px;
+}
+.hover__goods-slider .btn-link {
+  color: #fff;
+  background-color: #d71921;
+  clear: both;
+  width: 110px;
+  display: block;
+  margin: 18px auto 11px auto;
+  line-height: 32px;
+  font-size: 14px;
+  text-align: center;
+  transition: all .5s ease;
+}
+.hover__goods-slider .btn-link:hover {
+  background-color: #b71c1c;
+}
+.hover__goods-slider .btn-link span {
+  background: url(../images/basketGoods.png) no-repeat;
+  width: 18px;
+  height: 16px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.hover__goods-slider .comparison-tab {
+  text-align: center;
+}
+.hover__goods-slider .comparison-tab .comparison {
+  margin-right: 30px;
+}
+.hover__goods-slider .comparison-tab a {
+  display: inline-block;
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+}
+.hover__goods-slider .comparison-tab a:hover {
+  color: #2f2f2f;
+}
+.hover__goods-slider .comparison-tab a i {
+  color: #ffd200;
+  padding-right: 3px;
+}
+.goods:hover .goods-description {
+  position: relative;
+  top: -75px;
+}
+.goods:hover .hover__goods-slider {
+  display: block;
+  position: relative;
+  bottom: 105px;
+}
+@media screen and (max-width: 1054px) {
+  .goods-description {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 950px) {
+  .goods-description .name {
+    font-size: 20px;
   }
 }
 .inner {

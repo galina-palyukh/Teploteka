@@ -6,10 +6,11 @@
 //}
 .container-main{
   z-index: 1;
+  //overflow-x: hidden;
 }
 .sidebarL{
   width: 270px;
-  top: 512px;
+  top: 482px;
   position: relative;
   float: left;
 
@@ -57,6 +58,10 @@
         color:#fff ;
         text-transform: uppercase;
         font-weight:100;
+        transition: all .5s ease;
+        &:hover{
+          background-color: @main_darker-red;
+        }
       }
     }
 }

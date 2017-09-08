@@ -105,7 +105,7 @@ header {
   position: relative;
   display: block;
   font-size: 16px;
-  padding-left: 29px;
+  padding-left: 28px;
 }
 [class^="number-tel__"]::before {
   content: '';

@@ -321,15 +321,20 @@
 }
 .wrapper__links-menu {
   background-color: #d71921;
-  right: 60px;
   height: 60px;
   float: right;
+}
+.links-menu:first-child {
+  padding-left: 7px;
+}
+.links-menu:nth-child(2) {
+  padding-left: 10px;
 }
 .links-menu {
   display: inline-block;
   width: 77px;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 8.5px;
 }
 .img_comparison,
 .img_favorites,
@@ -355,7 +360,7 @@
   font-family: 'Roboto', sans-serif;
 }
 .wrapper__login {
-  width: 57px;
+  width: 59px;
   height: 60px;
   float: right;
   text-align: center;

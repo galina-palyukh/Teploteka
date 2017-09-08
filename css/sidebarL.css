@@ -23,7 +23,7 @@
 }
 .sidebarL {
   width: 270px;
-  top: 512px;
+  top: 482px;
   position: relative;
   float: left;
 }
@@ -68,6 +68,10 @@
   color: #fff ;
   text-transform: uppercase;
   font-weight: 100;
+  transition: all .5s ease;
+}
+.sidebarL .banner-conditioner__btn a:hover {
+  background-color: #b71c1c;
 }
 .content {
   margin-left: 300px;

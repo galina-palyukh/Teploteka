@@ -1,73 +1,77 @@
 @import "base.less";
 
-.wrapper-carousel{
+#wrapper-carousel{
   font-size: 0;
   margin-top: 30px;
-  img{
-    max-width: 100%;
-    text-align: right;
-  }
+  margin-bottom: 46px;
+
+    img{
+      max-width: 100%;
+      text-align: right;
+    }
+
+    .carousel-banner2{
+      margin:0 30px 0 30px;
+    }
+
+    .carousel-banner1,
+    .carousel-banner2,
+    .carousel-banner3 {
+      display: inline-block;
+      width: 270px;
+    }
+
+    .slick-dots {
+      bottom: -18px;
+      left: 1px;
+    }
+
+    .slick-dots li {
+      height: 8px;
+      width: 8px;
+    }
+
+    .slick-dots li button {
+      height: 8px;
+      width: 8px;
+    }
+
+    .slick-dots li.slick-active button:before {
+      opacity: 1;
+      background-color: #485258;
+    }
+
+    .slick-dots li button:before {
+      line-height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      content: '';
+      text-align: center;
+      opacity: 1;
+      background-color:#dadada;
+    }
+
 }
 
 
-.carousel-banner2{
-  margin:0 30px 0 30px;
-}
-.carousel-banner1,
-.carousel-banner2,
-.carousel-banner3 {
-  display: inline-block;
-
-  width: 270px;
-  //width: 33.33333%;
-
-}
 
 
 
-.slick-track{
-  transition: none !important;
-}
-
-.slick-dots {
-  bottom: -18px;
-  left: 1px;
-}
-.slick-dots li {
-  height: 8px;
-  width: 8px;
-}
-.slick-dots li button {
-  height: 8px;
-  width: 8px;
-}
 
 
-.wrapper-carousel .slick-dots li.slick-active button:before {
-  opacity: 1;
-  background-color: #485258;
-}
 
-.slick-dots li button:before {
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  content: '';
-  text-align: center;
-  opacity: 1;
-  background-color:#dadada;
-}
+
 
 @media screen and(max-width:1190px) {
-  .carousel-banner2{
+  #wrapper-carousel .carousel-banner2{
     margin:0 0 0 0;
   }
-  .carousel-banner1,
-  .carousel-banner2,
-  .carousel-banner3 {
+  #wrapper-carousel .carousel-banner1,
+  #wrapper-carousel .carousel-banner2,
+  #wrapper-carousel .carousel-banner3 {
     display: inline-block;
     width: 33.3%;
     text-align: center;
