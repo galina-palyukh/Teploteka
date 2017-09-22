@@ -14,6 +14,9 @@
   background: rgba(255, 255, 255, 0.8);
   z-index: 996;
 }
+a:hover {
+  cursor: pointer;
+}
 .mob_menu_bg.show {
   opacity: 1;
   visibility: visible;
@@ -92,7 +95,7 @@ header {
 .wrapper-telephone {
   display: inline-block;
   margin-top: 18px;
-  padding-left: 48px;
+  padding-left: 49px;
   vertical-align: top;
 }
 .vodafone,
@@ -105,7 +108,7 @@ header {
   position: relative;
   display: block;
   font-size: 16px;
-  padding-left: 28px;
+  padding-left: 27px;
 }
 [class^="number-tel__"]::before {
   content: '';
@@ -113,7 +116,7 @@ header {
   width: 20px;
   height: 20px;
   position: absolute;
-  left: 0;
+  left: -1px;
 }
 .number-tel__vodafone::before {
   background: url(../images/vodafone.png) no-repeat;
@@ -127,7 +130,7 @@ header {
 .wrapper-language__site {
   display: inline-block;
   margin-top: 43px;
-  padding-left: 26px;
+  padding-left: 27px;
   vertical-align: top;
 }
 .wrapper-language__site .language__site-link {

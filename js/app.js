@@ -65,6 +65,7 @@ $('.carousel-banner3').slick(
 $('.goods-slider__top').slick(
     {
         dots:false,
+        // vertical: true,
         slidesToShow: 3,
         autoplaySpeed: 600000000,
         slidesToScroll: 1,
@@ -89,6 +90,19 @@ $('.goods-slider__top').slick(
     }
 );
 
+$('.priсe_slider-wrapper').slick(
+    {
+        dots:false,
+        vertical: true,
+        slidesToShow: 3,
+        autoplaySpeed: 300000000,
+        slidesToScroll: 1,
+        autoplay: true,
+        prevArrow: "<div class='portfolio-arrow portfolio-arrow--prev'></div>",
+        nextArrow: "<div class='portfolio-arrow portfolio-arrow--next'></div>",
+
+    }
+);
 
 
 var toggleActive = function(){

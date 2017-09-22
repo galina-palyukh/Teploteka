@@ -2,8 +2,8 @@
 
 .slider__top_heading{
   font-size: 16px;
-  height: 45px;
-  line-height: 45px;
+  height: 44px;
+  line-height: 44px;
   padding-left: 31px;
   background-color: #f3f3f3;
   font-family: @main_font-family;
@@ -33,7 +33,6 @@
     //height: 20px;
     position: absolute;
     //z-index: 2;
-    width: 20px;
     cursor: pointer;
     top: -29px;
 
@@ -91,8 +90,10 @@
     text-align: left;
     span {
       font-size: 21.96px;
+      font-weight: 300;
       color: @main_lighter-red;
       font-family: @numbers_font-family;
+      letter-spacing: 0.3px;
     }
   }
 
@@ -102,7 +103,8 @@
     a {
       font-size: 15.97px;
       color: @color-text;
-      transition: all .4s ease;
+      cursor: pointer;
+      transition: all .4s linear;
 
       &:hover{
         color: @main_lighter-red;
@@ -171,7 +173,7 @@
     clear: both;
     width: 110px;
     display: block;
-    margin: 18px auto 11px auto;
+    margin: 18px auto 6px auto;
     line-height: 32px;
     font-size: 14px;
     text-align: center;
@@ -220,14 +222,14 @@
 
 .goods:hover .goods-description{
    position: relative;
-   top:-75px;
+   top:-62px;
    //opacity: 0.6;
  }
 //
 .goods:hover .hover__goods-slider{
   display: block;
   position: relative;
-  bottom:105px;
+  bottom:90px;
 }
 //.goods:hover{
 //  position: relative;
@@ -251,4 +253,15 @@
     }
   }
 
+}
+
+@media screen and (max-width: 550px){
+
+  .slider__top_heading {
+    padding-left: 15px;
+
+  }
+  .slider__top_heading {
+    font-size: 15px;
+  }
 }

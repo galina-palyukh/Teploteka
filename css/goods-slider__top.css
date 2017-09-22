@@ -14,14 +14,17 @@
   background: rgba(255, 255, 255, 0.8);
   z-index: 996;
 }
+a:hover {
+  cursor: pointer;
+}
 .mob_menu_bg.show {
   opacity: 1;
   visibility: visible;
 }
 .slider__top_heading {
   font-size: 16px;
-  height: 45px;
-  line-height: 45px;
+  height: 44px;
+  line-height: 44px;
   padding-left: 31px;
   background-color: #f3f3f3;
   font-family: 'Roboto', sans-serif;
@@ -33,7 +36,6 @@
 }
 .goods-slider__top .portfolio-arrow {
   position: absolute;
-  width: 20px;
   cursor: pointer;
   top: -29px;
 }
@@ -72,8 +74,10 @@
 }
 .goods-description .price_wrapper span {
   font-size: 21.96px;
+  font-weight: 300;
   color: #d71921;
   font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.3px;
 }
 .goods-description .name {
   text-align: left;
@@ -82,7 +86,8 @@
 .goods-description .name a {
   font-size: 15.97px;
   color: #2f2f2f;
-  transition: all .4s ease;
+  cursor: pointer;
+  transition: all .4s linear;
 }
 .goods-description .name a:hover {
   color: #d71921;
@@ -139,7 +144,7 @@
   clear: both;
   width: 110px;
   display: block;
-  margin: 18px auto 11px auto;
+  margin: 18px auto 6px auto;
   line-height: 32px;
   font-size: 14px;
   text-align: center;
@@ -176,12 +181,12 @@
 }
 .goods:hover .goods-description {
   position: relative;
-  top: -75px;
+  top: -62px;
 }
 .goods:hover .hover__goods-slider {
   display: block;
   position: relative;
-  bottom: 105px;
+  bottom: 90px;
 }
 @media screen and (max-width: 1054px) {
   .goods-description {
@@ -192,5 +197,13 @@
 @media screen and (max-width: 950px) {
   .goods-description .name {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .slider__top_heading {
+    padding-left: 15px;
+  }
+  .slider__top_heading {
+    font-size: 15px;
   }
 }
