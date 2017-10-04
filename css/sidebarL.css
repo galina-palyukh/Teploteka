@@ -80,6 +80,7 @@ a:hover {
 @media screen and (max-width: 1190px) {
   .content {
     margin-left: 280px;
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 900px) {

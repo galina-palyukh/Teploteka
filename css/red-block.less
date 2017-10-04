@@ -12,12 +12,12 @@
     font-weight: 300;
     .red-block__heading{
       text-transform: uppercase;
-      font-size: 26px;
+      font-size: 25px;
       text-align: center;
       /* padding: 20px 0; */
       padding-top: 20px;
       padding-bottom: 21px;
-      letter-spacing: 0.2px;
+      letter-spacing: 0.4px;
       font-weight: 100;
     }
     .red-block__description1{
@@ -57,6 +57,7 @@
         }
         img{
           margin-bottom: 30px;
+          max-width: 100%;
         }
         .block-text{
           font-size: 14px;
@@ -167,6 +168,21 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .wr__red-block {
+    .red-block {
+      .red-block__heading{
+        font-size: 18px;
+      }
+      .item-block {
+        .block
+        img {
+          max-width: 55px;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 440px) {
   .red-block__description1{

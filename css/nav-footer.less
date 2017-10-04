@@ -3,7 +3,7 @@
 .wr__nav-footer{
   background-color: #f3f3f3;
   .nav-footer{
-    padding: 46px 15px 50px 15px;
+    padding: 46px 15px 38px 15px;
     font-size: 0;
 
     .nav-footer__block{
@@ -40,6 +40,9 @@
             font-size: 14px;
             font-weight: 300;
             letter-spacing: 0.2px;
+            &:hover{
+              color:@main_lighter-red;
+            }
           }
         }
       }
@@ -50,8 +53,9 @@
       margin-top: 24px;
       .address,
       .email,
-      .telephone{
-        display: inline-flex;
+      .telephone,
+      .skype{
+        display: flex;
         align-items: center;
         color:#888888 ;
         font-size: 14px;
@@ -74,6 +78,16 @@
 
 
       .text_telephone {
+          margin-left: 14px;
+          font-family: @numbers_font-family;
+          span {
+            display: flex;
+            padding: 8px 0;
+          }
+        }
+
+
+      .text_skype {
         margin-left: 14px;
         font-family: @numbers_font-family;
         span {
@@ -84,4 +98,125 @@
 
     }
   }
+}
+
+
+
+@media screen and (max-width:1190px) {
+  .wr__nav-footer{
+
+    .nav-footer {
+      //padding: 46px 15px 50px 15px;
+      //font-size: 0;
+
+      .nav-footer__block {
+        width: 25%;
+
+        &:nth-child(1n+1) {
+          padding-left: 40px;
+        }
+
+        &:nth-child(5) {
+          //padding-left: 77px;
+          margin-top: 50px;
+          width: 100%;
+        }
+
+      }
+
+    }
+  }
+
+
+}
+
+@media screen and (max-width:900px) {
+  .wr__nav-footer{
+
+    .nav-footer {
+      //padding: 46px 15px 50px 15px;
+      //font-size: 0;
+
+      .nav-footer__block {
+        width: 25%;
+
+        &:nth-child(1n+1) {
+          padding-left: 20px;
+        }
+        .nav-list__heading_contact{
+          text-align: left;
+        }
+
+      }
+
+    }
+  }
+
+  .wr_contacts{
+    margin-top: 24px;
+    .address,
+    .email,
+    .telephone,
+    .skype{
+      //display: flex;
+      //align-items: center;
+      //color:#888888 ;
+      //font-size: 14px;
+    }
+
+    //.address{
+    //  margin-bottom: 15px;
+    //
+    //  .text_address{
+    //    margin-left: 14px;
+    //  }
+    //}
+
+    //.email{
+    //  margin-bottom: 9px;
+    //  .text_email{
+    //    margin-left: 13px;
+    //  }
+    //}
+
+
+    .text_telephone {
+      //margin-left: 14px;
+      //font-family: @numbers_font-family;
+      span {
+        //display: flex;
+        //padding: 8px 0;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width:630px) {
+  .wr__nav-footer{
+
+    .nav-footer {
+      //padding: 46px 15px 50px 15px;
+      //font-size: 0;
+
+      .nav-footer__block {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 40px;
+
+        &:nth-child(1n+1) {
+          padding-left: 0px;
+        }
+
+        &:nth-child(5) {
+          margin-top: 0px;
+          padding-left: 30px;
+        }
+
+      }
+
+    }
+  }
+
 }
